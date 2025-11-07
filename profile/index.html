@@ -4,46 +4,55 @@
     <meta charset="UTF-16" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rugved Agasti - Full Stack Developer</title>
-    <link rel="shortcut icon" href="./assets/profile.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/profile.jpg" type="image/x-icon" />
   </head>
+
   <body>
     <!-- Header Section -->
-
     <header class="navbar">
-      <div>
-        <ul>
-          <button><a href="index.html"><li>Home</li></a></button>
-          <button><a href="index.html"><li>About</li></a></button>
-          <button><a href="skills.html"><li>Skills</li></a></button>
-          <button><a href="contact.html"><li>Contact</li></a></button>
-          <button><a href="projects.html"><li>Projects</li></a></button>
-
+      <div class="nav-container">
+        <ul class="nav-list">
+          <button class="nav-btn">
+            <a href="index.html"><li>Home</li></a>
+          </button>
+          <button class="nav-btn">
+            <a href="index.html"><li>About</li></a>
+          </button>
+          <button class="nav-btn">
+            <a href="skills.html"><li>Skills</li></a>
+          </button>
+          <button class="nav-btn">
+            <a href="contact.html"><li>Contact</li></a>
+          </button>
+          <button class="nav-btn">
+            <a href="projects.html"><li>Projects</li></a>
+          </button>
         </ul>
       </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="div-1">
-        <h1 id="intro">Hello,<span class="name">Rugved</span> this side.</h1>
+      <div class="hero-content">
+        <h1 id="intro">Hello, <span class="name">Rugved</span> this side.</h1>
+        <p class="hero-text">
+          I'm passionate about building scalable systems and robust
+          applications. Specializing in
+          <span class="tech"
+            >Java, Spring Boot, and modern web technologies.</span
+          >
+        </p>
       </div>
-
-      <p>
-        I'm Passionate about building scalable systems and robust applications.
-        Specializing in
-        <span class="tech"
-          >Java, Spring Boot, and modern web technologies.</span
-        >
-      </p>
     </section>
-      <div>
-        <hr>
+
+    <div class="divider"><hr /></div>
 
     <!-- About Section -->
     <section class="about">
-      <div>
+      <div class="about-header">
         <h1>About Me</h1>
         <img
+          class="profile-img"
           src="./assets/profile.jpg"
           alt="This is a profile picture"
           height="100"
@@ -52,208 +61,216 @@
       </div>
 
       <aside class="about-me">
-        <div class="intro"></div>
-        <p>Hello, I'am <span>Rugved</span>, calling myself a software developer and a system programming enthusiaist. <br>
-        I like to debug things, type gibberish on laptop and call it code for modern web apps. <br>
-        Having worked with applications including backend, frontend and database operations. <br>
-        Apart from coding you can find me on the cricket field.
-        </p>
+        <div class="intro-text">
+          <p>
+            Hello, I'am <span>Rugved</span>, calling myself a software developer
+            and a system programming enthusiast.
+            <br />
+            I like to debug things, type gibberish on laptop and call it code
+            for modern web apps.
+            <br />
+            Having worked with applications including backend, frontend and
+            database operations.
+            <br />
+            Apart from coding you can find me on the cricket field.
+          </p>
+        </div>
       </aside>
     </section>
-    <hr />
+
+    <div class="divider"><hr /></div>
 
     <!-- Experience Section -->
     <section class="experience">
-      <div>
+      <div class="experience-container">
         <h1>Experience</h1>
-        <ul>
+        <ul class="experience-list">
           <li>ThinkSchool by ThinkBridge</li>
         </ul>
-        <span>Nov 2025 - Current</span>
+        <span class="duration">Nov 2025 - Current</span>
 
-        <p>
+        <p class="experience-details">
           - Participated in
           <a href="https://www.thinkbridge.com/" target="_blank">ThinkBridge</a>
-          Hiring Program as a fullstack developer
+          Hiring Program as a Full Stack Developer
           <br />
-          - Leveraged on the concepts of HTML , CSS and JavaScript to gain
-          experience on working with modern web applications
+          - Leveraged the concepts of HTML, CSS and JavaScript to gain
+          experience working with modern web applications
         </p>
       </div>
     </section>
-    <hr />
+
+    <div class="divider"><hr /></div>
 
     <!-- Skills Section -->
     <article class="skill">
       <h1>Skills</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Skills</th>
-            <th>Uses</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>Used HTML is designing of various static web-pages</td>
-          </tr>
-
-          <tr>
-            <td>CSS</td>
-            <td>
-              Used CSS to style the web-pages made and make the web-pages look
-              appealing
-            </td>
-          </tr>
-
-          <tr>
-            <td>JavaScript</td>
-            <td>Used JavaScript on both client and server side</td>
-          </tr>
-
-          <tr>
-            <td>React.js</td>
-            <td>
-              A modern frontend JavaScript Library for creating Single Page
-              Application
-            </td>
-          </tr>
-
-          <tr>
-            <td>Node.js</td>
-            <td>
-              Used Node.js for building backend and handeling server side logics
-            </td>
-          </tr>
-
-          <tr>
-            <td>MongoDB</td>
-            <td>A NoSQL based database based on BSON formatting</td>
-          </tr>
-
-          <tr>
-            <td>JWT Security</td>
-            <td>Used for authentication and authorization both</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="skill-table-container">
+        <table class="skill-table">
+          <thead>
+            <tr>
+              <th>Skills</th>
+              <th>Uses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Used HTML in designing various static web pages</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Used CSS to style and make the web pages look appealing</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Used JavaScript on both client and server side</td>
+            </tr>
+            <tr>
+              <td>React.js</td>
+              <td>
+                A modern frontend JavaScript library for creating Single Page
+                Applications
+              </td>
+            </tr>
+            <tr>
+              <td>Node.js</td>
+              <td>
+                Used Node.js for building backend and handling server-side logic
+              </td>
+            </tr>
+            <tr>
+              <td>MongoDB</td>
+              <td>A NoSQL based database using BSON format</td>
+            </tr>
+            <tr>
+              <td>JWT Security</td>
+              <td>Used for authentication and authorization both</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </article>
+
+    <div class="divider"><hr /></div>
+
+    <!-- Contact Form -->
+    <section class="contact">
+      <div class="contact-container">
+        <h1>Connect with Me</h1>
+        <form id="userForm" class="contact-form">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" />
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+          <button id="submission" type="submit" class="submit-btn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <div class="divider"><hr /></div>
+
+    <!-- Projects Section -->
+    <section class="projects">
+      <h1>Projects</h1>
+
+      <div id="project-1" class="project-card">
+        <h2>Email OneBox</h2>
+        <p id="emailOnebox" class="project-desc">
+          A feature-rich email aggregation system with real-time IMAP
+          synchronization,
+          <br />AI-powered categorization, and intelligent reply suggestions.
+        </p>
+        <p class="tech-stack">
+          <strong>Tech Stack:</strong>
+          <span>JavaScript/TypeScript</span>, <span>Node.js</span>,
+          <span>CSS</span>, <span>React.js</span>,
+          <span>Docker</span>
+        </p>
+        <button class="project-btn">
+          <a href="https://github.com/Rugved7/Email-OneBox" target="_blank"
+            >View on GitHub</a
+          >
+        </button>
+      </div>
+
+      <div id="project-2" class="project-card">
+        <h2>StockSimX</h2>
+        <p id="StockSimX" class="project-desc">
+          StockSimX simulates a real-time stock exchange where multiple traders
+          (threads) place buy/sell orders simultaneously
+          <br />while a central matching engine processes trades safely.
+          <br />This project demonstrates advanced Java Multithreading concepts
+          used in financial systems.
+        </p>
+        <p class="tech-stack">
+          <strong>Tech Stack:</strong>
+          <span>Java</span>, <span>Java Concurrency API</span>,
+          <span>Multithreading</span>,
+          <span>CLI</span>
+        </p>
+        <button class="project-btn">
+          <a href="https://github.com/Rugved7/StockSimX-" target="_blank"
+            >View on GitHub</a
+          >
+        </button>
+      </div>
+
+      <div id="project-3" class="project-card">
+        <h2>Inventory Management System</h2>
+        <p id="IMS" class="project-desc">
+          A production-ready, scalable backend API for comprehensive inventory
+          management in warehouse environments.
+          <br />Engineered with TypeScript, Node.js, and MongoDB, featuring
+          enterprise-grade audit logging, <br />real-time stock tracking, and
+          robust error handling.
+        </p>
+        <p class="tech-stack">
+          <strong>Tech Stack:</strong>
+          <span>JavaScript/TypeScript</span>, <span>Node.js</span>,
+          <span>CSS</span>, <span>React.js</span>,
+          <span>Docker</span>
+        </p>
+        <button class="project-btn">
+          <a href="https://github.com/Rugved7/Email-OneBox" target="_blank"
+            >View on GitHub</a
+          >
+        </button>
+      </div>
+    </section>
     <hr />
 
-     <!-- Contact Form -->
-    <div>
-        <h1>Connect with me</h1>
-      <form id="userForm">
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" />
-
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname" />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
-
-        <label for="message">Your Message:</label>
-    <textarea id="message" name="message" rows="5" cols="40"></textarea>
-
-        <button id="submission" type="submit">Submit</button>
-      </form>
-    </div>
-
-    <hr>
-
-    <!-- Project -->
-     <section class="projects">
-        <h1>Projects</h1>
-        <div id="project-1">
-            <h2>Email oneBox</h2>
-            <p id="emailOnebox">
-                A feature-rich email aggregation system with real-time IMAP synchronization,<br>
-                 AI-powered categorization, and intelligent reply suggestions.
-            </p>
-
-            <p>
-                <strong>Tech Stack: </strong>
-                <span>JavaScript/Typescript</span>, 
-                <span>Node.js</span>, 
-                <span>CSS</span>, 
-                <span>React.js</span>,
-                <span>Docker</span>
-            </p>
-            <button>
-                <a href="https://github.com/Rugved7/Email-OneBox">View on Github</a>
-            </button>
-        </div>
-
-         <div id="project-2">
-            <h2>StockSimX</h2>
-            <p id="StockSimX">
-               tockSimX simulates a real-time stock exchange where multiple traders (threads) place buy/sell orders simultaneously <br>
-               while a central matching engine processes trades safely. 
-               <br>This project demonstrates advanced Java Multithreading concepts used in actual financial systems.
-            </p>
-
-            <p>
-                <strong>Tech Stack: </strong>
-                <span>Java</span>, 
-                <span>Java Concurrency API</span>, 
-                <span>Multithreading</span>, 
-                <span>CLI- Command line interface</span>
-            </p>
-            <button>
-                <a href="https://github.com/Rugved7/StockSimX-">View on Github</a>
-            </button>
-        </div>
-
-         <div id="project-3">
-            <h2>Inventory Management System</h2>
-            <p id="IMS">
-              A production-ready, scalable backend API for comprehensive inventory management in warehouse environments. <br>
-               Engineered with TypeScript, Node.js, and MongoDB, featuring enterprise-grade audit logging, 
-               <br>real-time stock tracking, and robust error handling.
-            </p>
-
-            <p>
-                <strong>Tech Stack: </strong>
-                <span>JavaScript/Typescript</span>, 
-                <span>Node.js</span>, 
-                <span>CSS</span>, 
-                <span>React.js</span>,
-                <span>Docker</span>
-            </p>
-            <button>
-                <a href="https://github.com/Rugved7/Email-OneBox">View on Github</a>
-            </button>
-        </div>
-     </section>
     <!-- Footer -->
     <footer class="footer">
-      <div>
+      <div class="footer-container">
         <h1 class="footer-name">Rugved Agasti</h1>
-        <p>
-          Software Engineer who loves Software development and System
-          programming
+        <p class="footer-tagline">
+          Software Engineer who loves Software Development and System
+          Programming
         </p>
 
         <ul class="socials">
           <li>
-            <a href="https://www.github.com/Rugved7" target="_blank">
-              Github
-            </a>
+            <a href="https://www.github.com/Rugved7" target="_blank">GitHub</a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/rugved-agasti-09350121b/"
               target="_blank"
+              >LinkedIn</a
             >
-              Linkedin
-            </a>
           </li>
-
-          <li>
-            <a href="mailto:rugvedagasti7@gmail.com">Email</a>
-          </li>
+          <li><a href="mailto:rugvedagasti7@gmail.com">Email</a></li>
         </ul>
       </div>
     </footer>
