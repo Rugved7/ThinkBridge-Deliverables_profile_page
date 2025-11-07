@@ -1,3 +1,26 @@
-### This repository has the deliverables assigned on daily basis.
+# Rugved Agasti - Professional Profile
 
-## The Readme file of all the deliverables is in their respective folders. 
+A clean and professional profile page showcasing my skills, education, projects, and contact information.
+
+## Tech Stack
+
+- HTML5
+- CSS3
+
+## Features
+
+- Responsive design
+- Professional resume-style layout
+- Projects showcase
+- Skills table
+- Contact form
+- Education and achievements section
+
+## Getting Started
+
+1. Clone the repository
+2. Open `index.html` in your browser
+
+## Commit Convention
+
+This project follows [Conventional Commits](https://www.conventionalcommits.org/)
