@@ -1,13 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-16" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rugved Agasti</title>
+    <title>Rugved Agasti - Full Stack Developer</title>
+    <link rel="shortcut icon" href="./assets/profile.jpg" type="image/x-icon">
   </head>
   <body>
-    <div class="div-1">
-      <h1 id="name">Hello, My name is <span>Rugved</span></h1>
+    <!-- Header Section -->
+
+    <header class="navbar">
+      <div>
+        <ul>
+          <button><a href="index.html"><li>Home</li></a></button>
+          <button><a href="index.html"><li>About</li></a></button>
+          <button><a href="skills.html"><li>Skills</li></a></button>
+          <button><a href="contact.html"><li>Contact</li></a></button>
+          <button><a href="projects.html"><li>Projects</li></a></button>
+
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="div-1">
+        <h1 id="intro">Hello,<span class="name">Rugved</span> this side.</h1>
+      </div>
+
+      <p>
+        I'm Passionate about building scalable systems and robust applications.
+        Specializing in
+        <span class="tech"
+          >Java, Spring Boot, and modern web technologies.</span
+        >
+      </p>
+    </section>
+      <div>
+        <hr>
+
+    <!-- About Section -->
+    <section class="about">
+      <div>
+        <h1>About Me</h1>
+        <img
+          src="./assets/profile.jpg"
+          alt="This is a profile picture"
+          height="100"
+          width="100"
+        />
+      </div>
+
+      <aside class="about-me">
+        <div class="intro"></div>
+        <p>Hello, I'am <span>Rugved</span>, calling myself a software developer and a system programming enthusiaist. <br>
+        I like to debug things, type gibberish on laptop and call it code for modern web apps. <br>
+        Having worked with applications including backend, frontend and database operations. <br>
+        Apart from coding you can find me on the cricket field.
+        </p>
+      </aside>
+    </section>
+    <hr />
+
+    <!-- Experience Section -->
+    <section class="experience">
+      <div>
+        <h1>Experience</h1>
+        <ul>
+          <li>ThinkSchool by ThinkBridge</li>
+        </ul>
+        <span>Nov 2025 - Current</span>
+
+        <p>
+          - Participated in
+          <a href="https://www.thinkbridge.com/" target="_blank">ThinkBridge</a>
+          Hiring Program as a fullstack developer
+          <br />
+          - Leveraged on the concepts of HTML , CSS and JavaScript to gain
+          experience on working with modern web applications
+        </p>
+      </div>
+    </section>
+    <hr />
+
+    <!-- Skills Section -->
+    <article class="skill">
+      <h1>Skills</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Skills</th>
+            <th>Uses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Used HTML is designing of various static web-pages</td>
+          </tr>
+
+          <tr>
+            <td>CSS</td>
+            <td>
+              Used CSS to style the web-pages made and make the web-pages look
+              appealing
+            </td>
+          </tr>
+
+          <tr>
+            <td>JavaScript</td>
+            <td>Used JavaScript on both client and server side</td>
+          </tr>
+
+          <tr>
+            <td>React.js</td>
+            <td>
+              A modern frontend JavaScript Library for creating Single Page
+              Application
+            </td>
+          </tr>
+
+          <tr>
+            <td>Node.js</td>
+            <td>
+              Used Node.js for building backend and handeling server side logics
+            </td>
+          </tr>
+
+          <tr>
+            <td>MongoDB</td>
+            <td>A NoSQL based database based on BSON formatting</td>
+          </tr>
+
+          <tr>
+            <td>JWT Security</td>
+            <td>Used for authentication and authorization both</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <hr />
+
+     <!-- Contact Form -->
+    <div>
+        <h1>Connect with me</h1>
+      <form id="userForm">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" />
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+        <button id="submission" type="submit">Submit</button>
+      </form>
     </div>
+
+    <hr>
+
+    <!-- Project -->
+     <section class="projects">
+        <h1>Projects</h1>
+        <div id="project-1">
+            <h2>Email oneBox</h2>
+            <p id="emailOnebox">
+                A feature-rich email aggregation system with real-time IMAP synchronization,<br>
+                 AI-powered categorization, and intelligent reply suggestions.
+            </p>
+
+            <p>
+                <strong>Tech Stack: </strong>
+                <span>JavaScript/Typescript</span>, 
+                <span>Node.js</span>, 
+                <span>CSS</span>, 
+                <span>React.js</span>,
+                <span>Docker</span>
+            </p>
+            <button>
+                <a href="https://github.com/Rugved7/Email-OneBox">View on Github</a>
+            </button>
+        </div>
+
+         <div id="project-2">
+            <h2>StockSimX</h2>
+            <p id="StockSimX">
+               tockSimX simulates a real-time stock exchange where multiple traders (threads) place buy/sell orders simultaneously <br>
+               while a central matching engine processes trades safely. 
+               <br>This project demonstrates advanced Java Multithreading concepts used in actual financial systems.
+            </p>
+
+            <p>
+                <strong>Tech Stack: </strong>
+                <span>Java</span>, 
+                <span>Java Concurrency API</span>, 
+                <span>Multithreading</span>, 
+                <span>CLI- Command line interface</span>
+            </p>
+            <button>
+                <a href="https://github.com/Rugved7/StockSimX-">View on Github</a>
+            </button>
+        </div>
+
+         <div id="project-3">
+            <h2>Inventory Management System</h2>
+            <p id="IMS">
+              A production-ready, scalable backend API for comprehensive inventory management in warehouse environments. <br>
+               Engineered with TypeScript, Node.js, and MongoDB, featuring enterprise-grade audit logging, 
+               <br>real-time stock tracking, and robust error handling.
+            </p>
+
+            <p>
+                <strong>Tech Stack: </strong>
+                <span>JavaScript/Typescript</span>, 
+                <span>Node.js</span>, 
+                <span>CSS</span>, 
+                <span>React.js</span>,
+                <span>Docker</span>
+            </p>
+            <button>
+                <a href="https://github.com/Rugved7/Email-OneBox">View on Github</a>
+            </button>
+        </div>
+     </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div>
+        <h1 class="footer-name">Rugved Agasti</h1>
+        <p>
+          Software Engineer who loves Software development and System
+          programming
+        </p>
+
+        <ul class="socials">
+          <li>
+            <a href="https://www.github.com/Rugved7" target="_blank">
+              Github
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/rugved-agasti-09350121b/"
+              target="_blank"
+            >
+              Linkedin
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:rugvedagasti7@gmail.com">Email</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
