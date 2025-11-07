@@ -15,120 +15,88 @@
   </head>
 
   <body>
-    <!-- Header Section -->
-    <header class="navbar">
-      <div class="nav-container">
-        <ul class="nav-list">
-          <button class="nav-btn">
-            <a href="#hero"><li>Home</li></a>
-          </button>
-
-          <button class="nav-btn">
-            <a href="#about-section"><li>About</li></a>
-          </button>
-
-          <button class="nav-btn">
-            <a href="#education-section"><li>Education</li></a>
-          </button>
-
-          <button class="nav-btn">
-            <a href="#skills-section"><li>Skills</li></a>
-          </button>
-          <button class="nav-btn">
-            <a href="#projects-section"><li>Projects</li></a>
-          </button>
-          <button class="nav-btn">
-            <a href="#contact-section"><li>Contact</li></a>
-          </button>
-        </ul>
-      </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-      <div class="hero-content">
-        <h1 id="intro">Hello, <span class="name">Rugved</span> this side.</h1>
-        <p class="hero-text">
-          I'm passionate about building scalable systems and robust
-          applications. Specializing in
-          <span class="tech"
-            >Java, Spring Boot, and modern web technologies.</span
-          >
-        </p>
-      </div>
-    </section>
-
-    <div class="divider"><hr /></div>
-
-    <!-- About Section -->
-    <section id="about-section" class="about">
-      <div class="about-header">
-        <h1>About Me</h1>
+    <!-- Profile Container -->
+    <div class="profile-container">
+      <!-- Header Section -->
+      <header class="profile-header">
         <img
           class="profile-img"
           src="./assets/profile.jpg"
-          alt="This is a profile picture"
-          height="100"
-          width="100"
+          alt="Profile picture"
         />
-      </div>
-
-      <aside class="about-me">
-        <div class="intro-text">
-          <p>
-            Hello, I'am <span>Rugved</span>, calling myself a software developer
-            and a system programming enthusiast.
-            <br />
-            I like to debug things, type gibberish on laptop and call it code
-            for modern web apps.
-            <br />
-            Having worked with applications including backend, frontend and
-            database operations.
-            <br />
-            Apart from coding you can find me on the cricket field.
-          </p>
+        <h1>Rugved Agasti</h1>
+        <p class="tagline">
+          Full Stack Developer | System Programming Enthusiast
+        </p>
+        <div class="contact-links">
+          <a href="https://www.github.com/Rugved7" target="_blank">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/rugved-agasti-09350121b/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="mailto:rugvedagasti7@gmail.com">Email</a>
         </div>
-      </aside>
-    </section>
+      </header>
 
-    <div class="divider"><hr /></div>
-
-    <!-- Education Section -->
-    <section id="education-section" class="education">
-      <div class="education-container">
-        <h1>Education</h1>
-        <ul class="education-list">
-          <li>D Y Patil International University</li>
-        </ul>
-        <strong>Bachelor of Technology</strong>
-        <p>Computer Science and Engineering</p>
-        <span class="duration">Oct 2021 - June 2025</span>
-
-        <div class="education-details">
-          <h3>Achievements & Experiences</h3>
+      <!-- Main Content -->
+      <div class="profile-content">
+        <!-- About Section -->
+        <section class="section about-section">
+          <h2 class="section-title">About Me</h2>
           <p>
-            Participated in
-            <strong>Smart India Hackathon (SIH)</strong> representing my
-            university, where I worked on building an innovative software
-            solution addressing real-world challenges.
+            Hello, I'm <strong>Rugved</strong> — a passionate Software Developer
+            and System Programming enthusiast. I enjoy solving complex problems,
+            debugging, and building modern, scalable web applications. My
+            experience spans across backend, frontend, and database development,
+            allowing me to work on complete end-to-end solutions.
           </p>
-          <p>
-            Won the <strong>College Hackathon</strong> by developing a project
-            focused on enhancing user experience and system efficiency,
-            showcasing teamwork and technical skills.
+          <p class="hero-text">
+            I'm passionate about building scalable systems and robust
+            applications. having experience in
+            <strong
+              >modern web technologies like JavaScript, Java, and Spring
+              boot</strong
+            >
           </p>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <div class="divider"><hr /></div>
+        <!-- Education Section -->
+        <section class="section education-section">
+          <h2 class="section-title">Education</h2>
+          <div class="education-item">
+            <div class="education-header-row">
+              <div>
+                <h3>D Y Patil International University</h3>
+                <p class="degree">
+                  Bachelor of Technology - Computer Science and Engineering
+                </p>
+              </div>
+              <span class="duration">Oct 2021 - June 2025</span>
+            </div>
+            <div class="achievements">
+              <h4>Achievements & Experiences</h4>
+              <ul>
+                <li>
+                  Participated in
+                  <strong>Smart India Hackathon (SIH)</strong> representing my
+                  university, where I worked on building an innovative software
+                  solution addressing real-world challenges.
+                </li>
+                <li>
+                  Won the <strong>College Hackathon</strong> by developing a
+                  project focused on enhancing user experience and system
+                  efficiency, showcasing teamwork and technical skills.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills-section">
-      <article class="skill">
-        <h1>Skills</h1>
-        <div class="skill-table-container">
-          <table class="skill-table">
+        <!-- Skills Section -->
+        <section class="section skills-section">
+          <h2 class="section-title">Skills</h2>
+          <table class="skills-table">
             <thead>
               <tr>
                 <th>Skills</th>
@@ -137,166 +105,153 @@
             </thead>
             <tbody>
               <tr>
-                <td>HTML</td>
+                <td><strong>HTML</strong></td>
                 <td>Used HTML in designing various static web pages</td>
               </tr>
               <tr>
-                <td>CSS</td>
+                <td><strong>CSS</strong></td>
                 <td>Used CSS to style and make the web pages look appealing</td>
               </tr>
               <tr>
-                <td>JavaScript</td>
+                <td><strong>JavaScript</strong></td>
                 <td>Used JavaScript on both client and server side</td>
               </tr>
               <tr>
-                <td>React.js</td>
+                <td><strong>React.js</strong></td>
                 <td>
                   A modern frontend JavaScript library for creating Single Page
                   Applications
                 </td>
               </tr>
               <tr>
-                <td>Node.js</td>
+                <td><strong>Node.js</strong></td>
                 <td>
                   Used Node.js for building backend and handling server-side
                   logic
                 </td>
               </tr>
               <tr>
-                <td>MongoDB</td>
+                <td><strong>MongoDB</strong></td>
                 <td>A NoSQL based database using BSON format</td>
               </tr>
               <tr>
-                <td>JWT Security</td>
+                <td><strong>JWT Security</strong></td>
                 <td>Used for authentication and authorization both</td>
               </tr>
             </tbody>
           </table>
-        </div>
-      </article>
-    </section>
+        </section>
 
-    <div class="divider"><hr /></div>
+        <!-- Projects Section -->
+        <section class="section projects-section">
+          <h2 class="section-title">Projects</h2>
 
-    <!-- Contact Form -->
-    <section id="contact-section" class="contact">
-      <div class="contact-container">
-        <h1>Connect with Me</h1>
-        <form id="userForm" class="contact-form">
-          <label for="fname">First Name:</label>
-          <input type="text" id="fname" name="fname" />
+          <div class="project-item">
+            <div class="project-header-row">
+              <h3>Email OneBox</h3>
+              <a
+                href="https://github.com/Rugved7/Email-OneBox"
+                target="_blank"
+                class="project-link"
+                >View on GitHub</a
+              >
+            </div>
+            <p class="project-desc">
+              A feature-rich email aggregation system with real-time IMAP
+              synchronization, AI-powered categorization, and intelligent reply
+              suggestions.
+            </p>
+            <p class="tech-stack">
+              <strong>Tech Stack:</strong> JavaScript/TypeScript, Node.js, CSS,
+              React.js, Docker
+            </p>
+          </div>
 
-          <label for="lname">Last Name:</label>
-          <input type="text" id="lname" name="lname" />
+          <div class="project-item">
+            <div class="project-header-row">
+              <h3>StockSimX</h3>
+              <a
+                href="https://github.com/Rugved7/StockSimX-"
+                target="_blank"
+                class="project-link"
+                >View on GitHub</a
+              >
+            </div>
+            <p class="project-desc">
+              StockSimX simulates a real-time stock exchange where multiple
+              traders (threads) place buy/sell orders simultaneously while a
+              central matching engine processes trades safely. This project
+              demonstrates advanced Java Multithreading concepts used in
+              financial systems.
+            </p>
+            <p class="tech-stack">
+              <strong>Tech Stack:</strong> Java, Java Concurrency API,
+              Multithreading, CLI
+            </p>
+          </div>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" />
+          <div class="project-item">
+            <div class="project-header-row">
+              <h3>Inventory Management System</h3>
+              <a
+                href="https://github.com/Rugved7/Email-OneBox"
+                target="_blank"
+                class="project-link"
+                >View on GitHub</a
+              >
+            </div>
+            <p class="project-desc">
+              A production-ready, scalable backend API for comprehensive
+              inventory management in warehouse environments. Engineered with
+              TypeScript, Node.js, and MongoDB, featuring enterprise-grade audit
+              logging, real-time stock tracking, and robust error handling.
+            </p>
+            <p class="tech-stack">
+              <strong>Tech Stack:</strong> JavaScript/TypeScript, Node.js, CSS,
+              React.js, Docker
+            </p>
+          </div>
+        </section>
 
-          <label for="message">Your Message:</label>
-          <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        <!-- Contact Form -->
+        <section class="section contact-section">
+          <h2 class="section-title">Connect with Me</h2>
+          <form id="userForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" />
+              </div>
+            </div>
 
-          <button id="submission" type="submit" class="submit-btn">
-            Submit
-          </button>
-        </form>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message:</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <button id="submission" type="submit" class="submit-btn">
+              Submit
+            </button>
+          </form>
+        </section>
       </div>
-    </section>
 
-    <div class="divider"><hr /></div>
-
-    <!-- Projects Section -->
-    <section id="projects-section" class="projects">
-      <h1>Projects</h1>
-
-      <div id="project-1" class="project-card">
-        <h2>Email OneBox</h2>
-        <p id="emailOnebox" class="project-desc">
-          A feature-rich email aggregation system with real-time IMAP
-          synchronization,
-          <br />AI-powered categorization, and intelligent reply suggestions.
+      <!-- Footer -->
+      <footer class="profile-footer">
+        <p>
+          &copy; 2025 Rugved Agasti. Software Engineer who loves Software
+          Development and System Programming
         </p>
-        <p class="tech-stack">
-          <strong>Tech Stack:</strong>
-          <span>JavaScript/TypeScript</span>, <span>Node.js</span>,
-          <span>CSS</span>, <span>React.js</span>,
-          <span>Docker</span>
-        </p>
-        <button class="project-btn">
-          <a href="https://github.com/Rugved7/Email-OneBox" target="_blank"
-            >View on GitHub</a
-          >
-        </button>
-      </div>
-
-      <div id="project-2" class="project-card">
-        <h2>StockSimX</h2>
-        <p id="StockSimX" class="project-desc">
-          StockSimX simulates a real-time stock exchange where multiple traders
-          (threads) place buy/sell orders simultaneously
-          <br />while a central matching engine processes trades safely.
-          <br />This project demonstrates advanced Java Multithreading concepts
-          used in financial systems.
-        </p>
-        <p class="tech-stack">
-          <strong>Tech Stack:</strong>
-          <span>Java</span>, <span>Java Concurrency API</span>,
-          <span>Multithreading</span>,
-          <span>CLI</span>
-        </p>
-        <button class="project-btn">
-          <a href="https://github.com/Rugved7/StockSimX-" target="_blank"
-            >View on GitHub</a
-          >
-        </button>
-      </div>
-
-      <div id="project-3" class="project-card">
-        <h2>Inventory Management System</h2>
-        <p id="IMS" class="project-desc">
-          A production-ready, scalable backend API for comprehensive inventory
-          management in warehouse environments.
-          <br />Engineered with TypeScript, Node.js, and MongoDB, featuring
-          enterprise-grade audit logging, <br />real-time stock tracking, and
-          robust error handling.
-        </p>
-        <p class="tech-stack">
-          <strong>Tech Stack:</strong>
-          <span>JavaScript/TypeScript</span>, <span>Node.js</span>,
-          <span>CSS</span>, <span>React.js</span>,
-          <span>Docker</span>
-        </p>
-        <button class="project-btn">
-          <a href="https://github.com/Rugved7/Email-OneBox" target="_blank"
-            >View on GitHub</a
-          >
-        </button>
-      </div>
-    </section>
-    <hr />
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-        <h1 class="footer-name">Rugved Agasti</h1>
-        <p class="footer-tagline">
-          Software Engineer who loves Software Development and System
-          Programming
-        </p>
-
-        <ul class="socials">
-          <li>
-            <a href="https://www.github.com/Rugved7" target="_blank">GitHub</a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/rugved-agasti-09350121b/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li><a href="mailto:rugvedagasti7@gmail.com">Email</a></li>
-        </ul>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
