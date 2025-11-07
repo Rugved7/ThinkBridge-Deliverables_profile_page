@@ -34,3 +34,42 @@ body {
 }
 
 /* Section Specific Styles */
+.navbar {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+   list-style: none;
+   gap: 1rem;
+}
+
+.nav-btn {
+    background: none;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+.nav-btn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+    font-family: "JetBrains Mono", monospace
+}
+
+.nav-btn:hover {
+    border-color: #e7580b;
+    background-color: #fff3e0;
+}
