@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;   
+}
+
+#box{
+    background-color: blue;
+}
+
+.heading {
+    background-color: red;
+}
+
+.Default-heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#inner {
+    font-size: 10px;
+}
+
+#outer {
+    font-size: 25px;
+}
+
+.div-4 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.navbar {
+    background-color: #000000;
+    border: 10px solid green;
+    padding-top: 10px;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    color: aliceblue;
+}
+
+.search {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 10px;
+}
+
+.span {
+    color: orange;
+    justify-content: start;
+}
+
+.search input {
+    
+}

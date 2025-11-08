@@ -20,6 +20,7 @@ A clean and professional profile page showcasing my skills, education, projects,
 
 1. Clone the repository
 2. Open `index.html` in your browser
+3. OR To View the deployed profile page [Visit here](https://rugved7.github.io/rugved-profile/)
 
 ## Commit Convention
 
