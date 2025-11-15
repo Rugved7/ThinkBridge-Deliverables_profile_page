@@ -424,3 +424,160 @@ body.dark-theme .form-group textarea {
   color: #fff;
   border-color: #555;
 }
+
+/* GitHub Dialog Styles */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dialog-overlay.fade-out {
+  animation: fadeOut 0.3s ease;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.dialog-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 90%;
+  overflow: hidden;
+  animation: slideUp 0.4s ease;
+  border-top: 5px solid #e7580b;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.dialog-header {
+  background: linear-gradient(135deg, #e7580b 0%, #f37029 100%);
+  color: white;
+  padding: 20px 25px;
+  text-align: center;
+}
+
+.dialog-header h3 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.dialog-content {
+  padding: 30px 25px;
+  text-align: center;
+}
+
+.dialog-content p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.dialog-content p:last-child {
+  margin-bottom: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.dialog-actions {
+  padding: 20px 25px 25px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.dialog-btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Lato", sans-serif;
+}
+
+.dialog-btn-primary {
+  background-color: #e7580b;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dialog-btn-primary:hover {
+  background-color: #f37029;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(231, 88, 11, 0.3);
+}
+
+.dialog-btn-secondary {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.dialog-btn-secondary:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+/* Dark theme dialog styles */
+body.dark-theme .dialog-box {
+  background-color: #1e1e1e;
+  border-top-color: #e7580b;
+}
+
+body.dark-theme .dialog-content p {
+  color: #ddd;
+}
+
+body.dark-theme .dialog-content p:last-child {
+  color: #aaa;
+}
+
+body.dark-theme .dialog-btn-secondary {
+  background-color: #2a2a2a;
+  color: #ddd;
+}
+
+body.dark-theme .dialog-btn-secondary:hover {
+  background-color: #333;
+  color: #fff;
+}

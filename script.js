@@ -14,7 +14,7 @@ toggleBtn.addEventListener("click", () => {
 });
 
 // Typewriter Effect for Name
-const element = document.getElementById("typewritter-name");
+const element = document.getElementById("typewritter-name");``
 const words = ["Rugved", "Agasti"];
 let wordIndex = 0;
 let charIndex = 0;
@@ -78,3 +78,55 @@ if (form) {
         form.reset();
     });
 }
+
+
+// GitHub Dialog Popup
+function showGitHubDialog() {
+    const dialogHTML = `
+        <div id="github-dialog-overlay" class="dialog-overlay">
+            <div class="dialog-box">
+                <div class="dialog-header">
+                    <h3>👋 Welcome to My Portfolio!</h3>
+                </div>
+                <div class="dialog-content">
+                    <p>Hey there! Would you like to check out my GitHub profile?</p>
+                    <p>You can find all my open-source projects and contributions there!</p>
+                </div>
+                <div class="dialog-actions">
+                    <button id="dialog-visit" class="dialog-btn dialog-btn-primary">
+                        <span>Visit GitHub</span>
+                    </button>
+                    <button id="dialog-close" class="dialog-btn dialog-btn-secondary">
+                        Maybe Later
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.body.insertAdjacentHTML('beforeend', dialogHTML);
+    
+    // Add event listeners
+    document.getElementById('dialog-visit').addEventListener('click', () => {
+        window.open('https://www.github.com/Rugved7', '_blank');
+        closeDialog();
+    });
+    
+    document.getElementById('dialog-close').addEventListener('click', closeDialog);
+    document.getElementById('github-dialog-overlay').addEventListener('click', (e) => {
+        if (e.target.id === 'github-dialog-overlay') {
+            closeDialog();
+        }
+    });
+}
+
+function closeDialog() {
+    const dialog = document.getElementById('github-dialog-overlay');
+    if (dialog) {
+        dialog.classList.add('fade-out');
+        setTimeout(() => dialog.remove(), 300);
+    }
+}
+
+// Show dialog after 2 seconds
+setTimeout(showGitHubDialog, 2000);
